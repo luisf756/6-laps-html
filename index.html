@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Icecream</title>
+    <link rel="icon" type="image/x-icon" href="./img/svg/Icecream_logo.svg" />
 </head>
 <body>
     <header>
         <div class="container">
             <nav class="navbar">
-                <a class="logo" href="./index.html">Icecream</a> 
+                <a 
+                class="logo" href="./index.html">
+                <svg class="icon">
+                    <use href="./img/svg/Icecream_logo.svg#ice-cream"></use>
+                </svg>
+                </a> 
 
                 <ul class="navbar_menu">
                     <li><a class="page current" href="./index.html">Home</a></li>
@@ -28,6 +34,79 @@
             </div>
     </header>
     <main>
+        <section class="banner-index">
+            <div class="col-1">
+                <h1 class="baner-title">ice cream made with <span>passion</span></h1>
+                <button class="button-ho-is" type="button">Products</button>            
+                <button class="button-primary" type="button">How it’s made?</button>
+                <UL>
+                    <li>
+                        <img src="img/slider_pic2.png" alt="milk">
+                    </li>
+                    <li>
+                        <p class="descripotion">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        </p>
+                        <svg class="icon">
+                            <use href="./img/svg/arrow-right 4.svg#image0_70748_236"></use>
+                        </svg>
+                    </li>
+                </UL>    
+            </div>
+
+            <div class="col-2 ">
+                <img src="img/slider_pic3.png" alt="Icecream">
+            </div>
+
+            <div class="col-3">
+                <ul>
+                    <li><h2>16<sup>+</sup></h2>
+                        <p>cafes</p>
+                    </li>
+                    <li><h2>32<sup>+</sup></h2>
+                        <p>food trucks </p>
+                    </li>
+                </ul>
+                <img src="img/slider_pic1.png" alt="Icecream">
+            </div>
+        </section>
+        <section class="ho-is">
+            
+            <!-- <h2 class="big">products</h2> -->
+            <div class="container">
+                <h2>100% NATURAL <span>PRODUCTS </span></h2>
+                <!-- Cards  -->
+                <ul class="team-cards">
+                  <li>
+                    <img src="./img/home-pic1.png" alt="Icecream" width="270" />
+                    <h3>ICE CREAM</h3>
+                    <p>...</p>
+                    <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</P>
+                    <svg class="icon">
+                        <use href="./img/svg/arrow-right 4.svg#image0_70748_236"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <img src="./img/home-pic1.png" alt="first Member" width="270" />
+                    <h3>ICE CREAM</h3>
+                    <p>...</p>
+                    <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</P>
+                    <svg class="icon">
+                        <use href="./img/svg/arrow-right 4.svg#image0_70748_236"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <img src="./img/home-pic1.png" alt="first Member" width="270" />
+                    <h3>ICE CREAM</h3>
+                    <p>...</p>
+                    <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</P>
+                    <svg class="icon">
+                        <use href="./img/svg/arrow-right 4.svg#image0_70748_236"></use>
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+        </section>
 
     </main>
     <footer>
