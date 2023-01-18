@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
-/* @import url("https://fonts.googleapis.com/css2?family=Titan+One:wght@400;700&display=swap"); */
-@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Titan+One:wght@400;700&display=swap");
+/* @import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap'); */
 :root {
 
   --gray-button: #E5E5E5;
@@ -14,6 +14,8 @@
   --button-primary-hover: #D41443;
   --pink-2: #D41443;
   --pink-1: #FFA5BA;
+  --coffee-ice: #F0D1A5;
+  --green-ice: #C2E297;
   --pink-back-1: #FFB8CA;
   --pink-back-2: #FFF5F6;
   --text-color-1: #907E82;
@@ -31,7 +33,7 @@
 }
 
 body,header,footer{
-  width: 1200px;
+  width: 1280px;
 }
 
 body {
@@ -75,7 +77,8 @@ section{
   }
   header{
     background-color: var(--pink-back-1);
-    height: 80px;
+    /* height: 8px; */
+    
   }
   
   header .container{
@@ -88,18 +91,15 @@ section{
   header .container nav{
     display: flex;
     align-items: center;
-    gap: 100px;
+    height: 80px;
+    /* gap: 100px; */
   
   }
   
   header .container nav .logo{
     margin-top: 100px;
     color: var(--pink-2);
-    font-family: "Raleway", sans-serif;
-    /* font-size: 26px;
-    font-weight: 700;
-    line-height: 1.2;
-    text-decoration: none; */
+    
   }
   
   header .container nav .navbar_menu{
@@ -118,11 +118,11 @@ section{
     text-transform: capitalize;
   }
   
-  header .container .navbar_buy{
+  /* header .container .navbar_buy{
     display: flex;
     list-style: none;
     gap: 80px;
-  }
+  } */
   
   header .container .navbar_menu .page:hover,
   header .container .navbar_menu .page:focus,
@@ -135,10 +135,10 @@ section{
     background-color: var(--pink-back-1);
     display: flex;
     position: relative;
+    z-index: 1;
   }
 
   .banner-index .col-1 .baner-title{
-    /* margin: 23px auto;  */
     color: white;
 
     position: relative;
@@ -242,28 +242,242 @@ section{
     margin-top: 103px;    
 }
 
-.ho-is {
-    background-color: var(--primary-white-color);
-  }
-.ho-is .container h2 {
-    color: var(--pink-1);
-    font-size: 30px;
-    font-weight: 400px;
-    position: absolute;
-    width: 394px;
-    height: 116px;
-    left: 403px;
-    top: 725px;
-    font-family: 'Titan One', cursive;
-    text-align: center;
-  }
-  .ho-is .container h2 span{
-    color: var(--pink-2);
-    font-size: 58px;
-    font-weight: 400px;
-    padding: 30px 0;
-    text-align: center;
-  }
+.banner-index .col-3 ul li .icon-circle {
+  display: inline-flex;
+  height: 30px;
+  width: 30px;
+/* z-index: -1; */
+  border-radius: 50%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ffff;
+  position: absolute;
+}
+.banner-index .col-3 ul li span{
+  left: 34px;
+  z-index: -1;
+}
+
+                                /* products section  */
+.products {
+  /* position: absolute; */
+  background-color: var(--primary-white-color);
+  overflow:auto;
+}
+.products .container h2 {
+  color: var(--pink-1);
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.products .container .sub-title{
+  color: var(--pink-2);
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 66px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  
+}
+/* ------hois card */
+
+.products .container ul{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 130px;
+
+}
+.products .container .ice-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  width: 368px;
+  height: 535px;
+  border-radius: 24px;
+}
+.products .container .ice-cards li {
+  color: var(--primary-white-color);
+  text-align: center;
+  list-style: none;
+}
+.products .container .pink{
+  background-color: var(--pink-1);    
+}
+
+.products .container .coffee{
+  background-color: var(--coffee-ice);    
+}
+
+.products .container .green{
+  background-color: var(--green-ice);    
+}
+
+.products .container .ice-cards li h3 {
+  /* margin: 20px 0 10px 0; */
+  font-family: Titan One;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0.04em;
+  margin-top: 32px;
+  margin-bottom: 30px;
+
+}
+.products .container .ice-cards li p {
+  margin-bottom: 30px;
+  width: 245px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 176%;
+  letter-spacing: 0.04em;
+}
+
+.products .container .ice-cards li svg{
+  width: 40px;
+  height: 40px;
+  margin-bottom: px;
+}
+/* .how-ist-made  */
+
+.how-its-made {
+background-color: #FFF5F6;
+}
+.how-its-made h2 {
+color: var(--pink-1);
+font-family: 'Titan One';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 34px;
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+}
+
+.how-its-made .sub-title{
+color: var(--pink-2);
+font-family: 'Titan One';
+font-style: normal;
+font-weight: 400;
+font-size: 58px;
+line-height: 66px;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+
+}
+.how-its-made .container{
+display: flex;
+max-width: 1200px;
+background-image: url(/img/section1.png);
+}
+
+.how-its-made .container .right {
+width: 50%;
+padding: 15px;
+margin-top: 7px;
+text-align: center;
+}
+.how-its-made .container .left {
+margin-top: 320px;
+width: 50%;
+padding: 15px;
+margin-top: 30px;
+text-align: left;
+}
+.primer{
+width: 463px;
+height: 79px; 
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 176%;
+margin-bottom: 32px;
+/* or 28px */
+
+letter-spacing: 0.04em;
+
+color: #000000;
+}
+.second{
+width: 463px;
+height: 155px;
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 194%;
+/* or 27px */
+
+letter-spacing: 0.04em;
+
+color: #907E82;
+margin-bottom: 40px;
+}
+.how-its-made .down{
+/* align-items: center; */
+}
+.how-its-made ul{
+display: flex;
+justify-content: space-between;
+margin-left: 10%;
+}
+.how-its-made ul li{
+list-style: none;
+text-align: left;
+}
+.how-its-made ul li .icon{
+height: 60px;
+margin-bottom: 20px;
+}
+.how-its-made h3{
+/* list-style: none; */
+font-family: 'Titan One';
+font-style: normal;
+font-weight: 400;
+font-size: 58px;
+line-height: 66px;
+/* text-align: right; */
+letter-spacing: 0.04em;
+
+color: #D41443;
+}
+.how-its-made .descrive{
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 176%;
+width: 300px;
+letter-spacing: 0.02em;
+
+color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* Seccion ABOUT*/
 
