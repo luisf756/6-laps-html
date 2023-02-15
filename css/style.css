@@ -212,6 +212,18 @@ section{
     position: absolute;
     left: 649px;
 }
+.banner-index .col-2 .icon-circle-icon1 {
+  display: inline-flex;
+  height: 30px;
+  width: 30px;
+/* z-index: -1; */
+  border-radius: 50%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ffff;
+  position: absolute;
+}
 .banner-index .col-3{
     position: absolute;
     right: 30px;
@@ -289,7 +301,7 @@ section{
   text-transform: uppercase;
   
 }
-/* ------hois card */
+/* ------product card */
 
 .products .container ul{
   display: flex;
@@ -348,8 +360,15 @@ section{
 .products .container .ice-cards li svg{
   width: 40px;
   height: 40px;
-  margin-bottom: px;
+  margin-bottom: 10px;
 }
+.products .container .ice-cards li svg:hover #hex{
+  -ms-transform: rotate(7deg); /* IE 9 */
+  -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+  transform: rotate(7deg);
+  fill: #000000;
+}
+
 /* .how-ist-made  */
 
 .how-its-made {
@@ -381,7 +400,7 @@ text-transform: uppercase;
 }
 .how-its-made .container{
 display: flex;
-max-width: 1200px;
+max-width: 1280px;
 background-image: url(/img/section1.png);
 }
 
@@ -469,26 +488,45 @@ letter-spacing: 0.02em;
 color: #000000;
 }
 
+/*
+ * Tablet styles
+ */
+ @media screen and (max-width: 480px) {
+  .how-its-made h2,
+  .how-its-made .sub-title,
+  .products .container h2,
+  .products .container .sub-title{
+    text-align: left;
+  }
+  .products .container ul{
+    display: contents; 
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .products .container .ice-cards{
+    margin-top: 100px;
+    margin-bottom: 150px;
+    
+  }
+  .products .container ul{
+    flex-basis: calc(100% / 2);
+    font-size: 32px;
+  }
+  /* ----- how - is phone */
+  .how-its-made .container{
+    display: block;
+    max-width: 500px;
+  }
 
-
-
-
-
-
-
-
+  .container-about{
+    display: block;
+  }
+}
 
 
 /* Seccion ABOUT*/
 
 .About{
-
-  /*position: relative;
-  width: 1200px;
-  height: 877px;
-  /*left: 0px;*/
-  /*top: 3976px;
-  display: block;*/
   background: #FFF5F6;
 }
 
@@ -658,3 +696,4 @@ line-height: 183%;
 color: #907E82;
 
 }
+
